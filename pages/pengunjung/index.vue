@@ -29,8 +29,6 @@
 
 <style scoped>
 .container-fluid {
-  /* padding: 0;
-  margin: 0; */
   background-color: #ffffff;
 }
 .card {
