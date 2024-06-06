@@ -112,15 +112,12 @@
   }
   form {
     
-    /* background: transparent;
-    border: 3px solid rgba(255, 255, 255, .2);
-    border-radius: 12px;
-    padding: 30px 40px; */
+    
     padding: 1rem; 
     background-color: #ffffff13; 
     border-radius: 20px;
     box-shadow: 5px 5px 10px #000000;
-    /* width: 50rem; */
+  
     
    
   }
