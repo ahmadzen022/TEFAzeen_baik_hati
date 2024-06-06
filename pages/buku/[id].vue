@@ -1,10 +1,8 @@
   <template>
     <div class="content">
         <div class="container-fluid">
-            <nuxt-link to="/buku/">
-                <button type="button" class="btn btn-outline-dark btn-lg mt-4">KEMBALI</button></nuxt-link>
-                <nuxt-link to="/">
-                <button type="button" class="btn btn-outline-dark btn-lg mt-4 ms-3">SELESAI</button></nuxt-link>
+            <nuxt-link to="/buku" class="btn btn-outline-dark btn-lg mt-4">KEMBALI</nuxt-link>
+                <nuxt-link to="/" class="btn btn-outline-dark btn-lg mt-4 ms-3">SELESAI</nuxt-link>
                     <h2 class="text-center my-4">RINCIAN BUKU</h2>
             <div class="row d-flex justify-content-center flex-md-wrap" style="padding-top: 50px;">
                 <div class="col-3 ">

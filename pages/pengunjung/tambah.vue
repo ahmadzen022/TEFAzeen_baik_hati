@@ -10,10 +10,12 @@
           <h2 class="text-center my-4">RIWAYAT KUNJUNGAN</h2>
           <div class="my-3">
             <form @submit.prevent="getPengunjung">
-              <input v-model="keyword" type="search" class="form-control form-control-lg rounded-5" placeholder="Cari..." >
+              <input v-model="keyword" type="search" class="form-control form-control-lg rounded-5" placeholder="Cari..." @input="getPengunjung" />
             </form>
           </div>
-          <div class="my-3">menampilkan {{ visitors.length }}</div>
+          <div class="my-3">menampilkan {{ visitors.length }} dari {{ visitors.length}} riwayat</div>
+           
+          
           <div class="table-responsive">
             <table class="table table-bordered border-dark">
             <thead>
@@ -50,16 +52,20 @@
 <script setup>
 const supabase= useSupabaseClient()
 
+const keyword = ref('')
 const visitors = ref([])
-const getPengunjung =async () => {
-  const { data, error } = await supabase.from('pengunjung').select(`*, keanggotaan(*), keperluan(*)`)
+
+const getPengunjung = async () => {
+  const { data, error } = await supabase
+  .from('pengunjung')
+  .select(`*, keanggotaan(*), keperluan(*)`)
+  .ilike("nama",`%${keyword.value}%`)
+  .order('tanggal', { ascending: false})
   if(data) visitors.value = data
 }
 onMounted(() =>{
   getPengunjung()
 })
-
-
 
 </script>
 <style scoped>

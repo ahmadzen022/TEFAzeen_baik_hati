@@ -57,7 +57,7 @@
                 </select>
               </div>
              
-              <input type="submit"  class="btn btn-light btn-lg rounded-5 px-5  "  value="Kirim">
+              <input type="submit"  class="btn btn-light btn-lg rounded-5" style="width: 10rem; margin-left: 80px;"  value="Kirim">
             </form>
           </div>
         </div>
@@ -114,7 +114,7 @@
     background-image:linear-gradient(#C5C5C5,#C5C5C5)  ;
     padding: 1rem;
     border-radius: 20px;
-    width: 50rem;
+    /* width: 50rem; */
     
    
   }
@@ -126,12 +126,9 @@
     mask-image: 50%;
   }
   
-  .btn{
-    margin:10px 39%;
-  }
 
-  
-  
+
+ 
   </style>
 
 
