@@ -6,11 +6,11 @@
             <form @submit.prevent="kirimData">
               <h2 class="text-center my-4 text-light">ISI DATA KUNJUNGAN</h2>
               <div class="mb-3">
-                <input v-model="form.nama" type="text" placeholder="Nama ..." class="i form-control form-control-lg rounded-5" required>
+                <input v-model="form.nama" type="text" placeholder="Nama ..." class="i form-control form-control-lg rounded-2" required>
               </div>
   
               <div class="mb-3">
-                <select v-model="form.keanggotaan" @change="resetkelas" class="form-control form-control-lg form-select rounded-5">
+                <select v-model="form.keanggotaan" @change="resetkelas" class="form-control form-control-lg form-select rounded-2">
                   <option value="" disabled>KEANGGOTAAN</option>
                   <option v-for="(keanggotaan,i) in members" :key="i" :value="keanggotaan.id">{{ keanggotaan.nama }}</option>
                 </select>
@@ -51,13 +51,13 @@
               </div>
   
               <div class="mb-3">
-                <select v-model="form.keperluan"  class="form-control form-control-lg form-select rounded-5">
+                <select v-model="form.keperluan"  class="form-control form-control-lg form-select rounded-2">
                 <option value="" disabled>KEPERLUAN</option>
                 <option v-for="(item,i) in objectives" :key="i" :value="item.id">{{ item.nama }}</option>
                 </select>
               </div>
              
-              <input type="submit"  class="btn btn-light btn-lg rounded-5" style="width: 10rem; margin-left: 80px;"  value="Kirim">
+              <input type="submit"  class="btn btn-light btn-lg rounded-2" style="width: 10rem; margin-left: 80px;"  value="Kirim">
             </form>
           </div>
         </div>
@@ -111,22 +111,26 @@
    
   }
   form {
-    background-image:linear-gradient(#C5C5C5,#C5C5C5)  ;
-    padding: 1rem;
+    
+    /* background: transparent;
+    border: 3px solid rgba(255, 255, 255, .2);
+    border-radius: 12px;
+    padding: 30px 40px; */
+    padding: 1rem; 
+    background-color: #ffffff13; 
     border-radius: 20px;
+    box-shadow: 5px 5px 10px #000000;
     /* width: 50rem; */
     
    
   }
   .container-fluid {
-    background-image: url("@/assets/img/buku1.jpg");
+    background-image: url("@/assets/img/bg.jpg");
     background-size:cover;
     width: 100%;
     height: 100vh;
-    mask-image: 50%;
-  }
   
-
+  }
 
  
   </style>

@@ -3,7 +3,7 @@
         <div class="container-fluid">
             <nuxt-link to="/buku" class="btn btn-outline-dark btn-lg mt-4">KEMBALI</nuxt-link>
                 <nuxt-link to="/" class="btn btn-outline-dark btn-lg mt-4 ms-3">SELESAI</nuxt-link>
-                    <h2 class="text-center my-4">RINCIAN BUKU</h2>
+                    <h2 class="text-center my-4 ">RINCIAN BUKU</h2>
             <div class="row d-flex justify-content-center flex-md-wrap" style="padding-top: 50px;">
                 <div class="col-3 ">
                     <img :src="buku?.cover"  class="cover row img-fluid" alt="cover buku"   style="width: 250px; padding-top: 100px;">

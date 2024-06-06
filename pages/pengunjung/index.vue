@@ -49,12 +49,12 @@
 
 }
 
-.pengunjung {
+/* .pengunjung {
   background-color: #89B6D6;
 }
 .buku {
   background-color: #89B6D6;
-}
+} */
 
 h2{
   color: rgb(255, 255, 255);
