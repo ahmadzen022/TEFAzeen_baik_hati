@@ -122,7 +122,7 @@
    
   }
   .container-fluid {
-    background-image: url("@/assets/img/bg.webp");
+    background-image: url("@/assets/img/bg-_1_.webp");
     background-size:cover;
     width: 100%;
     height: 100vh;
