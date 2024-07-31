@@ -60,7 +60,7 @@ const getPengunjung = async () => {
   .from('pengunjung')
   .select(`*, keanggotaan(*), keperluan(*)`)
   .ilike("nama",`%${keyword.value}%`)
-  .order('tanggal', { ascending: false})
+  .order('id', { ascending: false})
   if(data) visitors.value = data
 }
 onMounted(() =>{
