@@ -70,10 +70,17 @@ onMounted(() =>{
 </script>
 <style scoped>
 .content{
-  background-color: #ffffff;
+  background-image: linear-gradient(#ffffff,#ffffff);
   font-family: "";
 }
 .h2{
   color:white;
 }
+
+td {
+  color: rgb(0, 0, 0);
+  border: 1px solid #f7f7f7;
+  background-color: rgb(181, 181, 181);
+}
+
 </style>
